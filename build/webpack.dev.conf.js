@@ -55,7 +55,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
-      inject: true
+      inject: true,
+      favicon: './favicon.ico' //ico图标加载不出来的解决方法
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
@@ -65,12 +66,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
-      inject: true,
-      favicon: './favicon.ico' 
-     })
   ]
 })
 

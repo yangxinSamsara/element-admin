@@ -11,6 +11,19 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 
+//使用钩子函数对路由进行权限跳转
+router.beforeEach((to, from, next) => {
+  const role = localStorage.getItem('username');
+  if (!role && to.path !== '/login') {
+      next('/login');
+  } else if(to.meta.permission){
+    role=="admin"?next():next('/403')
+  }else{
+    //这一个必须写，否则不会跳转
+    next()
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

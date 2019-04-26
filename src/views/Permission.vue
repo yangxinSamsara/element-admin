@@ -14,7 +14,7 @@ export default {
 .permission {
   background: linear-gradient(to bottom,red,blue);
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   font-size: 16px;
   line-height: 1.5
 }

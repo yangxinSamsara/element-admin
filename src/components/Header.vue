@@ -31,7 +31,7 @@
         </div>
         <el-dropdown trigger="click" @command="handCommand">
           <span class="el-dropdown-link">
-            admin
+            {{username}}
             <i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <el-dropdown-menu slot="dropdown">
@@ -58,7 +58,8 @@ export default {
       imgSrc: imgSrc,
       userSrc: imgSrc,
       fullScreen: false,
-      message: 2
+      message: 2,
+      username:JSON.parse(localStorage.getItem('username')).username
     };
   },
   mounted() {
