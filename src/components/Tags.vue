@@ -118,6 +118,7 @@ export default {
   height: 23px;
   line-height: 23px;
   margin: 2px 5px;
+  padding: 0 3px;
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #6f6f6f;
