@@ -76,7 +76,7 @@ export default {
       }
     },
     closeTags(cm) {
-      debugger;
+      
       if (cm == "other") {
         let curItem = this.tagsList.filter(item => {
           return item.path == this.$route.fullPath;

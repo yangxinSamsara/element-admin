@@ -62,6 +62,11 @@ export default {
       username:JSON.parse(localStorage.getItem('username')).username
     };
   },
+  created() {
+    bus.$on('unread',(val)=>{
+      this.message=val
+    })
+  },
   mounted() {
     if (document.body.clientWidth <= 1300) {
       this.changeCollapse();
