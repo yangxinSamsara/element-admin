@@ -1,2 +1,0 @@
-webpackJsonp([15],{"4vgy":function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"permission"},[e("h1",[this._v("403")]),this._v(" "),e("p",[this._v("很抱歉，您没有权限查看此页面。。。")])])}]};var i=s("C7Lr")({},n,!1,function(t){s("u/PZ")},"data-v-181dd2d0",null);e.default=i.exports},"u/PZ":function(t,e){}});
-//# sourceMappingURL=15.e5e303a41056c63b82b3.js.map
